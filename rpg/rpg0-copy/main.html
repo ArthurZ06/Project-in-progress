@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RPG</title>
+    <link
+      rel="shortcut icon"
+      href="assets/img/imagem-rpg.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/dado.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="column">
+        <div id="resultado1"></div>
+        <button class="dado-btn" onclick="rolarDado1()">D4 <img src="assets/img/aaad4.png" alt=""></button>
+
+        <div id="resultado2"></div>
+        <button class="dado-btn" onclick="rolarDado2()">D6</button>
+
+        <div id="resultado3"></div>
+        <button class="dado-btn" onclick="rolarDado3()">D8</button>
+      </div>
+
+      <div class="column">
+        <div id="resultado4"></div>
+        <button class="dado-btn" onclick="rolarDado4()">D10</button>
+
+        <div id="resultado5"></div>
+        <button class="dado-btn" onclick="rolarDado5()">D12</button>
+
+        <div id="resultado6"></div>
+        <button class="dado-btn" onclick="rolarDado6()">D20</button>
+      </div>
+    </div>
+
+    <img class="overlay-image" src="assets/img/3moldura.png" alt="moldura1" />
+    <img
+      class="background-image"
+      src="assets/img/fundo-castelo-rpg.jpg"
+      alt="imagem-dark-fantasy"
+    />
+
+    <img class="overlay-image1" src="assets/img/3moldura.png" alt="moldura2">
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/dado.js"></script>
+  </body>
+</html>

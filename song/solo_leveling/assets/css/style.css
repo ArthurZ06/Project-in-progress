@@ -1,0 +1,45 @@
+:root {
+  --primary-color: #48349a;
+  --secundary-color: #090810;
+}
+
+
+* {
+  font-family: sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to right, #242d4a, #2a3354);
+}
+
+h1 {
+  text-align: center;
+  color: var(--secundary-color);
+}
+
+main {
+  margin: auto;
+}
+
+.conteiner {
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+h2 {
+  text-align: center;
+  color: var(--secundary-color);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+

@@ -1,0 +1,67 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reproduzir Música</title>
+  </head>
+  <body>
+    <img src="rick_vc_rick_prime" alt="Sua Imagem" id="imagem" />
+
+    <audio
+      id="musica"
+      src="360ytmp3.com_320kbps-o-primeiro-rick-prime-ninja.mp3"
+    ></audio>
+
+    <script>
+      // Seleciona a imagem
+      var imagem = document.getElementById("imagem");
+
+      // Seleciona o elemento de áudio
+      var musica = document.getElementById("musica");
+
+      // Adiciona um evento de clique à imagem
+      imagem.addEventListener("click", function () {
+        // Verifica se a música está pausada
+        if (musica.paused) {
+          // Reproduz a música
+          musica.play();
+        } else {
+          // Pausa a música se já estiver reproduzindo
+          musica.pause();
+        }
+      });
+    </script>
+
+    <script>
+      // Seleciona o elemento de áudio
+      var musica = document.getElementById("musica");
+
+      // Adiciona um event listener para o evento keydown no documento
+      document.addEventListener("keydown", function (event) {
+        // Verifica se a tecla pressionada é a seta para cima
+        if (event.key === "ArrowUp") {
+          aumentarVolume();
+        }
+        // Verifica se a tecla pressionada é a seta para baixo
+        else if (event.key === "ArrowDown") {
+          abaixarVolume();
+        }
+      });
+
+      // Função para aumentar o volume
+      function aumentarVolume() {
+        if (musica.volume < 1) {
+          // Volume máximo é 1
+          musica.volume += 0.1; // Aumenta o volume em 0.1
+        }
+      }
+
+      // Função para abaixar o volume
+      function abaixarVolume() {
+        if (musica.volume > 0) {
+          musica.volume -= 0.1; // Diminui o volume em 0.1
+        }
+      }
+    </script>
+  </body>
+</html>

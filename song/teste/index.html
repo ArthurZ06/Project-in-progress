@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste solo leveling</title>
+    <link rel="shortcut icon" href="solo_leveling03.jpg" type="image/x-icon" />
+
+    <script>
+      // Seleciona a imagem
+      var imagem = document.getElementById("imagem");
+
+      // Seleciona o elemento de áudio
+      var musica = document.getElementById("musica");
+
+      // Adiciona um evento de clique à imagem
+      imagem.addEventListener("click", function () {
+        // Verifica se a música está pausada
+        if (musica.paused) {
+          // Reproduz a música
+          musica.play();
+        } else {
+          // Pausa a música se já estiver reproduzindo
+          musica.pause();
+        }
+      });
+    </script>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      /* Estilos para centralizar o conteúdo */
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Torna o contêiner ocupar toda a altura da tela */
+      }
+
+      .content {
+        text-align: center; /* Centraliza o texto horizontalmente dentro da div */
+      }
+
+      body {
+        background-image: linear-gradient(to right, #242d4a, #2a3354);
+      }
+      h1 {
+        text-align: center;
+        color: #48349a;
+      }
+      h2 {
+        text-align: center;
+        color: #090810;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <!-- Todo o seu conteúdo vai aqui -->
+        <h1>Solo leveling</h1>
+        <img src="solo_leveling.jpg" alt="Sua Imagem" id="imagem" />
+        <audio
+          src="musica"
+          src="360ytmp3.com_320kbps-o-primeiro-rick-prime-ninja.mp3"
+        ></audio>
+        <h2>Nivel monarca das sombras</h2>
+      </div>
+    </div>
+  </body>
+</html>
