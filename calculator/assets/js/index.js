@@ -6,10 +6,6 @@ function insert(n) {
 function clean() {
     document.getElementById('resultado').innerHTML = ''
 }
-function apagar() {
-    
-}
-
 
 // consts necessarias 
 const display = document.getElementsByClassName('display')
