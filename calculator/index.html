@@ -4,32 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora</title>
-    <link rel="shortcut icon" href="/assets/img/calculadora.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/img/calculadora.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body>
-    <div class="calculadora">
-      <div class="display">0</div>
-      <div class="botoes">
-        <div class="botao">7</div>
-        <div class="botao">8</div>
-        <div class="botao">9</div>
-        <div class="botao">4</div>
-        <div class="botao">5</div>
-        <div class="botao">6</div>
-        <div class="botao">1</div>
-        <div class="botao">2</div>
-        <div class="botao">3</div>
-        <div class="botao"></div>
-        <div class="botao"></div>
-        <div class="botao">0</div>
-        <div class="botao"></div>
-        <div class="botao"></div>
-        <div class="botao"></div>
-        <div class="botao"></div>
+    <div class="background">
+      <div class="calculadora">
+        <h1>Calculadora</h1>
+        <div class="display" id="resultado"></div>
+        <div class="botoes">
+          <button class="botao" onclick="clean()">C</button>
+          <button class="botao"><</button>
+          <button class="botao">/</button>
+          <button class="botao">x</button>
+
+          <button class="botao" onclick="insert('7')">7</button>
+          <button class="botao" onclick="insert('8')">8</button>
+          <button class="botao" onclick="insert('9')">9</button>
+          <button class="botao">-</button>
+
+          <button class="botao" onclick="insert('4')">4</button>
+          <button class="botao" onclick="insert('5')">5</button>
+          <button class="botao" onclick="insert('6')">6</button>
+          <button class="botao">+</button>
+
+          <button class="botao" onclick="insert('1')">1</button>
+          <button class="botao" onclick="insert('2')">2</button>
+          <button class="botao" onclick="insert('3')">3</button>
+          <button class="botao">=</button>
+
+          <button class="botao" >0</button>
+          <button class="botao">.</button>
+        </div>
       </div>
     </div>
     <script src="/assets/js/index.js"></script>
   </body>
-  </html>
-  
+</html>

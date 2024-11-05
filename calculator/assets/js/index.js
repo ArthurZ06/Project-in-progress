@@ -1,12 +1,25 @@
-const nome = 'Arthur'
-const sobrenome = 'Nicolas'
-const idade = 18
-const peso = 85
-const altura = 1.80
+// mostrar no display
+function insert(n) {
+    const numero = document.getElementById('resultado').innerHTML;
+    document.getElementById('resultado').innerHTML = numero + n
+}
+function clean() {
+    document.getElementById('resultado').innerHTML = ''
+}
+function apagar() {
+    
+}
 
-const resultado = peso / (altura * altura)
 
-let imc = resultado.toFixed(0)
-let alturaconsertada = altura.toFixed(2)
+// consts necessarias 
+const display = document.getElementsByClassName('display')
+const resultado = document.getElementById('resultado')
+const botoes = document.querySelectorAll('.botoes')
 
-console.log(`${nome} ${sobrenome} tem ${idade} anos, pesa ${peso}kg tem ${alturaconsertada} de altura e seu IMC é de ${imc} `)
+// salva em variavel
+
+// fazer o calculo 
+
+// mostrar o resultado
+
+
