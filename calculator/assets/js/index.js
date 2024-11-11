@@ -1,21 +1,27 @@
-// mostrar no display
+// Função para inserir valores no display
 function insert(n) {
-    const numero = document.getElementById('resultado').innerHTML;
-    document.getElementById('resultado').innerHTML = numero + n
+  const display = document.getElementById("resultado");
+  display.innerHTML += n;
 }
+
+// Função limpa tudo
 function clean() {
-    document.getElementById('resultado').innerHTML = ''
+  const display = document.getElementById("resultado");
+  display.innerHTML = ""; // Limpa o display
 }
 
-// consts necessarias 
-const display = document.getElementsByClassName('display')
-const resultado = document.getElementById('resultado')
-const botoes = document.querySelectorAll('.botoes')
+// Função de apagar
+function apaga() {
+  const display = document.getElementById("resultado");
+  display.innerHTML = display.innerHTML.slice(0, -1); // Remove o último caractere
+}
 
-// salva em variavel
-
-// fazer o calculo 
-
-// mostrar o resultado
-
-
+// Função para calcular
+function calcular() {
+  const display = document.getElementById("resultado");
+  try {
+    display.innerHTML = eval(display.innerHTML);
+  } catch (error) {
+    display.innerHTML = "Erro"; // Exibe "Erro" se a expressão for inválida
+  }
+}
