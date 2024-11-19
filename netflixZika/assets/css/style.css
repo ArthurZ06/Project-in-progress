@@ -1,30 +1,134 @@
-* {
+body,
+html {
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+    sans-serif;
+  font-size: 16px;
   margin: 0;
   padding: 0;
-  box-sizing: 0;
+  color: #fff;
+  background: #000000;
 }
 
-body {
-  width: 100%;
-  height: 100vh;
-  background-image: url("/assets/img/fundo.jpg");
+.default-ltr-cache-k55181 {
+  background-image: url("../img/fundonew.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
-#heading {
+.default-ltr-cache-1osrymp {
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  padding: 60px 68px;
+  width: 100%;
+  max-width: 450px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 28px;
+}
+
+form {
   display: flex;
-  background-color: red;
+  flex-direction: column;
+  gap: 16px;
+}
+
+input {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background: #333;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #8c8c8c;
+}
+
+button {
+  background-color: #e50914;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #f40612;
+  transition: 0.3s;
+}
+
+.password-requirements {
+  color: #ffa00a;
+  font-size: 13px;
+  text-align: left;
+  margin-top: 4px;
+}
+
+.options {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  font-size: 14px;
 }
-#heading h1 {
-  padding: 40px;
-  font-size: 40px;
-  text-transform: uppercase;
+
+.options a {
+  color: #b3b3b3;
 }
-#heading a {
-  color: white;
+
+.options input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.new-to {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.new-to a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.new-to a:hover {
+  text-decoration: underline;
+}
+
+.default-ltr-cache-1osrymp p:last-of-type {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #8c8c8c;
+  line-height: 1.4;
+}
+
+a {
+  color: #fff;
   text-decoration: none;
-  font-family: sans-serif;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 600px) {
+  .default-ltr-cache-1osrymp {
+    max-width: 500px;
+  }
 }
