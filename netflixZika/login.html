@@ -9,29 +9,45 @@
   </head>
   <body>
     <div class="default-ltr-cache-k55181">
-      <div class="background">
-        <div class="default-ltr-cache-1osrymp">
-          <h1>Sign In</h1>
-          <form action="#" method="post">
-            <input type="email" placeholder="Email or mobile number" required />
-            <input type="password" placeholder="Password" required />
-            <p class="password-requirements">
-              Your password must contain between 4 and 60 characters.
-            </p>
-            <button type="submit">Sign In</button>
-          </form>
-          <div class="options">
-            <p><a href="#">Forgot password?</a></p>
-            <p>
-              <input type="checkbox" id="remember-me" /><label
-                for="remember-me"
-              >
-                Remember me</label
-              >
-            </p>
-          </div>
-          <p class="new-to">New to Netflix? <a href="#">Sign up now.</a></p>
+      <div class="default-ltr-cache-1osrymp">
+        <h1>Sign In</h1>
+        <form action="#" method="post">
+          <!-- Campo de Email -->
+          <input
+            type="email"
+            name="email"
+            placeholder="Email or mobile number"
+            required
+          />
+
+          <!-- Campo de Senha -->
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+
+          <!-- Requisitos de Senha -->
+          <p class="password-requirements">
+            Your password must contain between 4 and 60 characters.
+          </p>
+
+          <!-- Botão de Login -->
+          <button type="submit">Sign In</button>
+        </form>
+
+        <!-- Opções Adicionais -->
+        <div class="options">
+          <p><a href="#">Forgot password?</a></p>
+          <p>
+            <input type="checkbox" id="remember-me" />
+            <label for="remember-me">Remember me</label>
+          </p>
         </div>
+
+        <!-- Link para Cadastro -->
+        <p class="new-to">New to Netflix? <a href="#">Sign up now.</a></p>
       </div>
     </div>
     <script src="assets/js/main.js"></script>
